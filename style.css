@@ -1,8 +1,9 @@
 :root {
-  --color-text: #1a1a1a;
-  --color-bg: #fafafa;
-  --color-accent: #2a6f4c;
-  --color-muted: #555;
+  --color-text: #ffffff;
+  --color-bg: #363b6e;
+  --color-accent: #a9b8f5;
+  --color-muted: rgba(255, 255, 255, 0.75);
+  --color-border: rgba(255, 255, 255, 0.2);
 }
 
 * {
@@ -21,6 +22,16 @@ body {
   max-width: 640px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.headshot {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  margin: 0 0 1.5rem;
 }
 
 h1 {
@@ -51,7 +62,11 @@ h2 {
 
 .services li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact p {
+  margin: 0 0 0.5rem;
 }
 
 .contact a {
